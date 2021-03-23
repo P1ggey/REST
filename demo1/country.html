@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countries</title>
+</head>
+<body>
+<h1>Countries</h1>
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/countries/show" method="get">
+    <input type="submit" value="вывести таблицу">
+</form>
+    <form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/countries/add" method="post">
+        <p>Название Страны: <input type="text" name="name_country"></p>
+        <input type="submit" value="добавить">
+    </form>
+
+    <form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/countries/update" method="post">
+        <p>изменить(id): <input type="text" name="name_country"></p>
+        <p>на(название): <input type="text" name="name_country_up"></p>
+        <input type="submit" value="обновить">
+    </form>
+
+    <form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/countries/delete" method="post">
+        <p>страница: <input type="text" name="name_country"></p>
+        <input type="submit" value="удалить">
+    </form>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/countries/h" method="post">
+    <p>Количество элементов на странице: <input type="text" name="count"></p>
+    <input type="submit" value="пагинация">
+</form>
+<p> ============================Доп запросы==================== </p>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/countries/findByName" method="post">
+    <p>название страны для поиска: <input type="text" name="name"></p>
+    <input type="submit" value="найти">
+</form>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/countries/order" method="get">
+    <input type="submit" value="Сортировать">
+</form>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/countries/search" method="POST">
+    <p>Слово для поиска: <input type="text" name="name"></p>
+    <input type="submit" value="найти">
+</form>
+
+</body>
+</html>

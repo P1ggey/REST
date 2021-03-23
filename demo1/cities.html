@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cities</title>
+</head>
+<body>
+<h1>Cities</h1>
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/cities/show" method="get">
+    <input type="submit" value="вывести таблицу">
+</form>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/cities/add" method="post">
+    <p>Название города: <input type="text" name="name_city"></p>
+    <p>id страны: <input type="text" name="id_country"></p>
+    <input type="submit" value="добавить">
+</form>
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/cities/update" method="post">
+    <p>id города: <input type="text" name="id_city"></p>
+    <p>изменить название на: <input type="text" name="name_city_up"></p>
+    <p>изменит id страны на: <input type="text" name="id_country_up"></p>
+    <input type="submit" value="обновить">
+</form>
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/cities/del" method="post">
+    <p>id города: <input type="text" name="id_city"></p>
+    <input type="submit" value="удалить">
+</form>
+ <form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/cities/h" method="post">
+    <p>Количество элементов на странице: <input type="text" name="count"></p>
+    <input type="submit" value="пагинация">
+</form>
+
+<p> ============================Доп запросы==================== </p>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/cities/findByName" method="POST">
+    <p>Название города: <input type="text" name="city_name"></p>
+    <input type="submit" value="Найти">
+</form>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/cities/order" method="get">
+    <input type="submit" value="Отсортировать в алфавитном порядке">
+</form>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/cities/search" method="POST">
+    <p>Слово для поиска: <input type="text" name="name"></p>
+    <input type="submit" value="найти">
+</form>
+
+</body>
+</html>

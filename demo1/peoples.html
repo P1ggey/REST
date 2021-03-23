@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Peoples</title>
+</head>
+<body>
+<h1>Peoples</h1>
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/peoples/show" method="get">
+    <input type="submit" value="вывести таблицу">
+</form>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/peoples/add" method="post">
+    <p>Имя человека: <input type="text" name="name_people"></p>
+    <p>id города: <input type="text" name="id_city"></p>
+    <input type="submit" value="добавить">
+</form>
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/peoples/update" method="post">
+    <p>id человека: <input type="text" name="id_people"></p>
+    <p>изменить имя на: <input type="text" name="name_people_up"></p>
+    <p>изменит id города на: <input type="text" name="id_city_up"></p>
+    <input type="submit" value="обновить">
+</form>
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/peoples/del" method="post">
+    <p>id человека: <input type="text" name="id_people"></p>
+    <input type="submit" value="удалить">
+</form>
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/peoples/h" method="post">
+    <p>Количество элементов на странице: <input type="text" name="count"></p>
+    <input type="submit" value="пагинация">
+</form>
+<p> ============================Доп запросы==================== </p>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/peoples/find" method="POST">
+    <p>Название города: <input type="text" name="city_name"></p>
+    <input type="submit" value="Найти">
+</form>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/peoples/order" method="get">
+    <input type="submit" value="Отсортировать по id">
+</form>
+
+<form action="http://localhost:8080/demo1-1.0-SNAPSHOT/api/peoples/pattern" method="POST">
+    <p>Слово для поиска: <input type="text" name="name"></p>
+    <input type="submit" value="найти">
+</form>
+
+</body>
+</html>
